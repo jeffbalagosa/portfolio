@@ -2,12 +2,17 @@ body {
   background-color: #242038;
 }
 
+nav {
+  background-color: #ffbf46;
+}
+
 header {
   background-color: #648381;
   height: 150px;
 }
 
-h1 {
+h1,
+h2 {
   color: white;
   text-align: center;
 }
