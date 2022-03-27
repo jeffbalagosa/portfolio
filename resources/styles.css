@@ -9,10 +9,30 @@ nav {
 header {
   background-color: #648381;
   height: 150px;
+  text-align: center;
+  color: white;
 }
-
-h1,
 h2 {
   color: white;
   text-align: center;
+}
+
+.beltcolor2 {
+  display: inline-block;
+  background-color: red;
+}
+
+header p {
+  background-color: black;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.nav-link {
+  color: black;
+}
+
+nav li:hover {
+  background-color: #e4fde1;
+  border-radius: 15px;
 }
