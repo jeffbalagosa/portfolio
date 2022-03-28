@@ -1,5 +1,6 @@
 body {
   background-color: #242038;
+  color: white;
 }
 
 nav {
@@ -7,24 +8,23 @@ nav {
   width: 100%;
   position: fixed;
   top: 0;
+  z-index: 1;
 }
 
 header {
   background-color: #648381;
   height: 150px;
   text-align: center;
-  color: white;
   margin-top: 40px;
   height: 200px;
   padding-top: 30px;
 }
 
 .pmfont {
-  font-family: "Permanent Marker", cursive;
+  font-family: "Permanent Marker", cursive, Georgia;
 }
 
 h2 {
-  color: white;
   text-align: center;
 }
 
@@ -47,4 +47,8 @@ nav .nav-link {
 nav .nav-link:hover {
   background-color: #e4fde1;
   border-radius: 15px;
+}
+
+.card {
+  display: inline-block;
 }
