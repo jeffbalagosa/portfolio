@@ -20,6 +20,10 @@ header {
   padding-top: 30px;
 }
 
+header .container {
+  padding-bottom: 30px;
+}
+
 .pmfont {
   font-family: "Permanent Marker", cursive, Georgia;
 }
