@@ -1,121 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-    <!-- Bootstrap CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-      crossorigin="anonymous"
-    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="resources/normalize.css" />
     <link rel="stylesheet" href="resources/styles.css" />
-
-    <!-- Google Font: Permanent Marker -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap"
+      href="https://fonts.googleapis.com/css?family=Patua+One&display=swap"
       rel="stylesheet"
     />
-
-    <title>Developer Profile</title>
+    <title>Jeff's FEWD Portfolio</title>
   </head>
+
   <body>
-    <nav>
-      <ul class="nav justify-content-center">
-        <li class="nav-item">
-          <a class="nav-link" href="#home">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#aboutme">About Me</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#projects">Projects</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#resume">Resume</a>
-        </li>
-      </ul>
-    </nav>
-    <header id="home">
-      <div class="container">
-        <h1 class="pmfont">Jeff Balagosa</h1>
-        <h3>Web Developer, IT Manager, Brazilian Jiu Jitsu Black Belt</h3>
+    <div class="container">
+      <header class="clearfix">
+        <h1>Jeff Balagosa</h1>
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#funfacts">Fun Facts</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <img src="images/profile.jpg" alt="Profile" />
         <p>
-          Welcome, to
-          <strong>
-            <span class="beltcolor1">The Grappler's</span>
-            <span class="beltcolor2">Code!</span></strong
-          >
+          Hi! I'm a front-end developer who loves all things related to
+          technology, especially coding! I recently finished a degree in
+          front-end web development at Treehouse and am excited to put all my
+          skills to use!
         </p>
+      </header>
+
+      <main class="clearfix">
+        <!-- Portfolio section -->
+        <h2 id="portfolio">Portfolio</h2>
+
+        <article class="col">
+          <img src="images/marketing-page.png" alt="Marketing Page" />
+          <h3>Marketing Page</h3>
+          <p>
+            Solutions--methodologies; back-end compelling integrate, platforms
+            plug-and-play architect interfaces brand productize capture,
+            intuitive models.
+          </p>
+        </article>
+
+        <article class="col">
+          <img src="images/search-page.png" alt="Search Page" />
+          <h3>Search Page</h3>
+          <p>
+            Out-of-the-box engineer Cluetrain drive aggregate enterprise B2B
+            platforms; e-enable 24/7 customized. Innovative; citizen-media
+            bricks-and-clicks users methodologies; strategic reinvent
+            envisioneer innovative scale tag transparent matrix.
+          </p>
+        </article>
+
+        <article class="col">
+          <img src="images/travel-app.jpg" alt="Travel App" />
+          <h3>Travel App</h3>
+          <p>
+            Visualize out-of-the-box vertical methodologies methodologies
+            cutting-edge mesh reinvent initiatives, applications dot-com
+            web-enabled strategic real-time integrate peer-to-peer: interfaces
+            podcasting back-end, integrateAJAX-enabled cutting-edge webservices,
+            widgets reinvent.
+          </p>
+        </article>
+
+        <article class="col">
+          <img src="images/map.png" alt="Map of Favorite Spots" />
+          <h3>Map of Favorite Spots</h3>
+          <p>
+            Revolutionize customized brand wikis repurpose mindshare embedded
+            seamless sticky reinvent plug-and-play rich benchmark global!
+            Rich-clientAPIs supply-chains grow integrate enable back-end
+            e-markets integrateAJAX-enabled wikis technologies visualize.
+          </p>
+        </article>
+
+        <article class="col">
+          <img src="images/photo-gallery.png" alt="Photo Gallery" />
+          <h3>Photo Gallery</h3>
+          <p>
+            E-enable enterprise revolutionary interactive enhance reintermediate
+            target, 24/365, grow. Vertical ecologies: deploy redefine,
+            transparent paradigms mashups revolutionize granular addelivery
+            turn-key. Rich-clientAPIs deploy web-enabled synergies enhance
+            content value.
+          </p>
+        </article>
+
+        <article class="col">
+          <img src="images/calculator-app.jpg" alt="Calculator" />
+          <h3>Calculator</h3>
+          <p>
+            User-centred envisioneer killer ecologies strategize global engage
+            podcasting 24/7 syndicate solutions models engage transparent.
+            Visualize B2C back-end, end-to-end killer: extend addelivery.
+            Transition webservices seize embrace interfaces semantic incubate:
+            relationships; enable integrateAJAX-enabled e-business integrate.
+          </p>
+        </article>
+      </main>
+
+      <!-- Fun Facts Section -->
+      <div class="section2 clearfix">
+        <hr />
+        <h2 id="funfacts">Fun Facts</h2>
+
+        <article class="col">
+          <img src="images/burgers.jpg" alt="Fact #1" />
+          <h3>I Love Burgers!</h3>
+          <p>
+            Bacon ipsum dolor amet ground round fatback shoulder, strip steak
+            chislic bresaola andouille pork chop venison leberkas pork drumstick
+            shank. Corned beef buffalo bresaola tail boudin, beef ribs pork
+            belly ground round sausage sirloin doner tri-tip pig pork chop beef.
+            Ham hock hamburger pastrami tongue shank turducken t-bone.
+          </p>
+        </article>
+
+        <article class="col">
+          <img src="images/ufc.jpg" alt="Fact #2" />
+          <h3>I've Trained with UFC Fighters</h3>
+          <p>
+            Meatball pork belly strip steak, brisket beef ribs buffalo capicola
+            leberkas jerky chicken picanha turducken sirloin pork chop. Short
+            ribs hamburger picanha andouille boudin beef ribs porchetta
+            landjaeger, tail turducken flank spare ribs drumstick prosciutto.
+          </p>
+        </article>
       </div>
-    </header>
-    <main class="container">
-      <section id="aboutme">
-        <h2>About Me</h2>
-        <p>
-          Platforms end-to-end methodologies, citizen-media weblogs tagclouds,
-          enhance integrate vertical cutting-edge content, user-contributed
-          strategic incubate evolve revolutionize systems, semantic portals,
-          front-end revolutionize. E-services tag; next-generation one-to-one
-          engage integrated turn-key, "long-tail value-added, reinvent reinvent
-          peer-to-peer," plug-and-play models. Cluetrain out-of-the-box; users
-          infomediaries podcasts engage seize embedded action-items distributed
-          folksonomies integrate. Enable reinvent out-of-the-box
-          next-generation, deliver empower target proactive sticky
-          bricks-and-clicks Cluetrain synergies morph, extensible integrate
-          wikis target: synthesize markets expedite niches. Granular schemas
-          initiatives open-source blogospheres synergistic addelivery utilize
-          one-to-one aggregate, compelling visualize reinvent vortals B2C
-          transition webservices technologies technologies 24/7 communities?
-          Solutions next-generation life-hacks transparent killer productize
-          technologies engage utilize interactive open-source value drive.
-          Rss-capable semantic visionary podcasting leverage webservices
-          eyeballs plug-and-play synergize tag redefine turn-key enable,
-          monetize target integrate mission-critical tag synergistic data-driven
-          aggregate tagclouds.<br /><br />
+      <!-- /section2 -->
 
-          24/365 communities technologies customized, productize integrate
-          create leverage, "orchestrate interfaces." Deliver web-readiness
-          user-centric morph partnerships--iterate, e-services viral. Mashups
-          remix killer tagclouds mashups, methodologies, enable front-end
-          revolutionary. B2B; synergize scale B2B strategic integrate aggregate
-          incentivize clicks-and-mortar iterate content. Out-of-the-box
-          clicks-and-mortar streamline robust benchmark users, infrastructures
-          portals peer-to-peer target e-commerce incentivize deploy benchmark.
-        </p>
-      </section>
-      <section id="projects">
-        <h2>Projects</h2>
-        <div class="d-flex justify-content-around flex-wrap">
-          <div class="card">
-            <img
-              src="https://placeimg.com/640/480/arch"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                Some text about my project. Description of what it is and what
-                it does. Technologies used.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section id="resume"><h2>Resume</h2></section>
-    </main>
-
-    <!-- Bootstrap Bundle with Popper -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-      crossorigin="anonymous"
-    ></script>
+      <footer class="clearfix">
+        <!-- Contact section -->
+        <article>
+          <h2 id="contact">Contact</h2>
+          <p>
+            Feel free to call me call me or shoot an email over my way if you
+            want to chat or want more info about what I've been working on, I'd
+            love to hear from you!
+          </p>
+          <p>
+            Phone
+            <strong><a href="tel:1-562-867-5309">1-562-867-5309</a></strong>
+          </p>
+          <p>
+            Email
+            <strong
+              ><a href="mailto:info@myemail.com">info@myemail.com</a></strong
+            >
+          </p>
+        </article>
+        <hr />
+        <p class="name">Jeff Balagosa</p>
+        <nav>
+          <ul class="footernav">
+            <li><a class="smallscreens" href="#">Back to Top</a></li>
+            <li><a class="largerscreens" href="#">Home</a></li>
+            <li><a class="largerscreens" href="#portfolio">Portfolio</a></li>
+            <li><a class="largerscreens" href="#funfacts">Fun Facts</a></li>
+            <li><a class="largerscreens" href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </footer>
+    </div>
+    <!-- /container -->
   </body>
 </html>
