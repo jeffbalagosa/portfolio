@@ -1,0 +1,68 @@
+/* ============================================= */
+/*              Buttons                          */
+/* ============================================= */
+
+.btn {
+    margin-top: 15px;
+    width: 100%;
+    color: $color-accent;
+    border: none;
+    padding: 10px 0;
+    text-transform: uppercase;
+    border-radius: 5px;
+
+    @media (min-width: $breakpoint) {
+        padding: 10px 30px;
+    }
+
+    @media (min-width: $breakpoint) {
+        &+& {
+            margin-left: 10px;
+        }
+    }
+}
+
+.default {
+    background-color: map-get($btn-clr, 'def');
+
+    &:hover {
+        color: $color-primary;
+        background-color: lighten(map-get($btn-clr, 'def'), 25%);
+    }
+}
+
+.error {
+    background-color: map-get($btn-clr, 'err');
+
+    &:hover {
+        color: $color-primary;
+        background-color: lighten(map-get($btn-clr, 'err'), 25%);
+    }
+}
+
+.info {
+    background-color: map-get($btn-clr, 'inf');
+
+    &:hover {
+        color: $color-primary;
+        background-color: lighten(map-get($btn-clr, 'inf'), 25%);
+    }
+}
+
+.success {
+    background-color: map-get($btn-clr, 'suc');
+
+    &:hover {
+        color: $color-primary;
+        background-color: lighten(map-get($btn-clr, 'suc'), 25%);
+    }
+}
+
+.warning {
+    background-color: map-get($btn-clr, 'war');
+
+    &:hover {
+        color: $color-primary;
+        background-color: lighten(map-get($btn-clr, 'war'), 25%);
+    }
+}

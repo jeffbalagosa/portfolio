@@ -1,0 +1,22 @@
+/* ============================================= */
+/*              Images                           */
+/* ============================================= */
+
+.img {
+    &-logo {
+        @include cntr-itm;
+    }
+
+    &-avatar {
+        @extend .img-logo;
+        @include mrgn-t-mxw;
+        max-height: 100%;
+    }
+
+    &-frame {
+        @extend .img-logo;
+        @include mrgn-t-mxw;
+        padding: 13px;
+        border: 1px solid #ccc;
+    }
+}

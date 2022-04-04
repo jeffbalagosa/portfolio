@@ -1,0 +1,18 @@
+/* ============================================= */
+/*            Media Queries                      */
+/* ============================================= */
+
+// These are basically the bastard children I couldn't find the home for.
+@media (min-width: $breakpoint) {
+
+    @for $i from 1 through 12 {
+        .col-#{$i} {
+            flex-basis: map-get($flx-bs, 'c-#{$i}');
+        }
+    }
+
+    .logo {
+        margin-left: initial;
+        margin-right: initial;
+    }
+}
