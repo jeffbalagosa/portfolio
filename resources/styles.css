@@ -209,6 +209,7 @@ header nav,
   .container {
     width: 95%;
     margin: 0 auto;
+    max-width: 2085px;
   }
 
   /* header section stylings */
