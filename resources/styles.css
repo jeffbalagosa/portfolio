@@ -133,11 +133,11 @@ header nav,
 }
 
 /* clearfix for fixing colapsed containers*/
-.clearfix::after {
+/* .clearfix::after {
   content: " ";
   display: table;
   clear: both;
-}
+} */
 
 /* Media queries for different screen sizes */
 
