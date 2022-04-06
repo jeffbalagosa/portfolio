@@ -5,9 +5,9 @@ body {
   background-color: #648381;
 }
 
-main,
-.section2 {
-  background-color: #ffbf46;
+main {
+  border: 3px solid #242038;
+  background-color: #e4fde1;
 }
 
 main h2 {
@@ -42,6 +42,7 @@ header p {
 
 .name {
   float: left;
+  margin-left: 1em;
 }
 
 .footernav {
