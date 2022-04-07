@@ -45,11 +45,6 @@ header p {
   margin-top: 0;
 }
 
-.name {
-  float: left;
-  margin-left: 1em;
-}
-
 .footernav {
   float: right;
   margin-top: 1em;
@@ -165,34 +160,6 @@ header nav,
 
   nav a:hover {
     color: blue;
-  }
-
-  header img,
-  header p {
-    width: 50%;
-    padding-top: 5em;
-    box-sizing: border-box;
-  }
-
-  header img {
-    float: right;
-    margin-top: 0;
-  }
-
-  header p {
-    text-align: left;
-    font-size: 1.5em;
-    padding-right: 2em;
-    padding-top: 3em;
-  }
-
-  /* main stylings */
-  .col {
-    width: 50%;
-    float: left;
-    padding-left: 1em;
-    padding-right: 1em;
-    box-sizing: border-box;
   }
 
   /* footer stylings */
