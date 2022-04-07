@@ -1,4 +1,10 @@
 /* layout */
+.push-left {
+  background-color: inherit;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+
 body {
   font-family: "Patua One";
   text-align: center;
