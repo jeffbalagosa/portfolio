@@ -30,36 +30,6 @@ main img {
   box-shadow: 10px 10px 5px grey;
 }
 
-header {
-  padding-top: 1em;
-}
-
-header img {
-  margin-top: 3em;
-  margin-bottom: 1.5em;
-  width: 80%;
-  max-width: 90%;
-}
-
-header p {
-  margin-top: 0;
-}
-
-.footernav {
-  float: right;
-  margin-top: 1em;
-}
-
-.largerscreens {
-  display: none;
-}
-
-#funfacts {
-  margin-top: 0;
-  margin-bottom: 1em;
-  padding-top: 1em;
-}
-
 /* base styles */
 a {
   text-decoration: none;
@@ -121,20 +91,6 @@ nav li {
   color: inherit;
 }
 
-p,
-header nav,
-.footernav {
-  padding-left: 1em;
-  padding-right: 1em;
-}
-
-/* clearfix for fixing colapsed containers*/
-/* .clearfix::after {
-  content: " ";
-  display: table;
-  clear: both;
-} */
-
 /* Media queries for different screen sizes */
 
 @media (min-width: 768px) {
@@ -166,15 +122,6 @@ header nav,
   footer li {
     float: left;
   }
-
-  .smallscreens {
-    display: none;
-  }
-
-  .largerscreens {
-    display: block;
-    padding-left: 2em;
-  }
 }
 
 @media (min-width: 1024px) {
@@ -189,9 +136,5 @@ header nav,
   main,
   footer {
     font-size: 1.2em;
-  }
-
-  .largerscreens {
-    margin-left: 2em;
   }
 }
