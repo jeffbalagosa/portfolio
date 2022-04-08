@@ -31,9 +31,14 @@ main p {
   margin-bottom: 2.5em;
 }
 
+main p,
+h3 {
+  color: white;
+}
+
 main img {
   width: 90%;
-  box-shadow: 5px 5px 5px #e7d2e4;
+  box-shadow: 7px 7px 5px #e7d2e4;
 }
 
 /* base styles */
@@ -171,8 +176,19 @@ nav li {
 @media (min-width: 768px) {
   /* header stylings */
 
+  .initials {
+    font-size: 1em;
+  }
+
+  .initials p {
+    margin-top: 0.5em;
+    margin-left: 3em;
+  }
+
   nav {
     height: 2em;
+    padding-top: 1em;
+    margin-bottom: 2em;
   }
 
   .nav-flex {
