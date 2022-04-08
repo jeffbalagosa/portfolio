@@ -81,9 +81,10 @@ h1:hover,
 .initials:hover {
   color: #afa;
 }
+
 a {
   text-decoration: none;
-  color: inherit;
+  color: #6f6;
 }
 
 a:hover {
@@ -257,8 +258,9 @@ ul.main-nav li {
   nav li,
   .initials {
     color: #6f6;
-    margin: 0 10px;
+    margin: 0 15px;
     background-color: inherit;
+    font-size: 1.2em;
   }
 
   .push-left {
