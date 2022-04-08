@@ -193,15 +193,6 @@ ul.main-nav li {
 @media (min-width: 768px) {
   /* layout */
 
-  header {
-    height: 50em;
-  }
-
-  h1.pulseText,
-  header p {
-    padding-top: 5em;
-  }
-
   div.flex-container {
     display: flex;
     flex-wrap: wrap;
@@ -212,7 +203,32 @@ ul.main-nav li {
     width: 600px;
   }
 
-  /* header stylings */
+  /* hero section */
+
+  header {
+    height: 800px;
+    position: relative;
+  }
+
+  div.header-container {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+
+  h1 {
+    transform: scaleY(5);
+  }
+
+  header p {
+    font-size: 2.5em;
+    margin-top: 1.5em;
+  }
+
+  /* /hero section */
 
   .initials {
     font-size: 1em;
