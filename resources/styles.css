@@ -191,6 +191,17 @@ ul.nav-flex li {
 /* Media queries for different screen sizes */
 
 @media (min-width: 768px) {
+  /* layout */
+  div.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  article {
+    width: 600px;
+  }
+
   /* header stylings */
 
   .initials {
