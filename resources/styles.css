@@ -5,6 +5,12 @@
   padding-bottom: 0.5em;
 }
 
+.container {
+  width: 95%;
+  margin: 0 auto;
+  max-width: 2085px;
+}
+
 body {
   font-family: "Rubik", sans-serif;
   text-align: center;
@@ -26,11 +32,28 @@ main p {
 }
 
 main img {
-  width: 100%;
-  box-shadow: 10px 10px 5px grey;
+  width: 90%;
+  box-shadow: 5px 5px 5px #e7d2e4;
 }
 
 /* base styles */
+.initials {
+  font-size: 3em;
+}
+
+.initials p {
+  margin-top: 0.1em;
+  margin-bottom: 0.1em;
+}
+
+h1 {
+  margin-bottom: 2px;
+}
+
+header p {
+  font-size: 2em;
+  margin-top: 2px;
+}
 
 h1:hover,
 .initials:hover {
@@ -179,12 +202,6 @@ nav li {
 }
 
 @media (min-width: 1024px) {
-  .container {
-    width: 95%;
-    margin: 0 auto;
-    max-width: 2085px;
-  }
-
   /* main section stylings */
 
   main,
