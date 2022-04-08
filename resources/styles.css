@@ -65,12 +65,16 @@ li.push-left.initials {
 }
 
 h1 {
+  letter-spacing: -0.01em;
+  transform: scaleY(3);
+  word-spacing: -1em;
+  margin-top: 2em;
   margin-bottom: 2px;
 }
 
 header p {
   font-size: 2em;
-  margin-top: 2px;
+  margin-top: 0.9em;
 }
 
 h1:hover,
