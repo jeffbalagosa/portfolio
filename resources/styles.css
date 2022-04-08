@@ -193,6 +193,11 @@ ul.main-nav li {
 @media (min-width: 768px) {
   /* layout */
 
+  ul.main-nav li {
+    background-color: inherit;
+    color: inherit;
+  }
+
   div.flex-container {
     display: flex;
     flex-wrap: wrap;
