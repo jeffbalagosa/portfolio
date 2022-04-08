@@ -6,5 +6,5 @@
 
 ## Fonts
 
-h1 = Press Start 2P
-Everything else = Rubik
+- h1 = Press Start 2P
+- Everything else = Rubik
