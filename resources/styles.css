@@ -192,6 +192,16 @@ ul.nav-flex li {
 
 @media (min-width: 768px) {
   /* layout */
+
+  header {
+    height: 50em;
+  }
+
+  h1.pulseText,
+  header p {
+    padding-top: 5em;
+  }
+
   div.flex-container {
     display: flex;
     flex-wrap: wrap;
