@@ -241,13 +241,19 @@ ul.main-nav li {
   }
 
   .initials p {
-    margin-top: 0.5em;
+    margin-top: 0.9em;
+    margin-left: 0.3em;
+    margin-right: 0.3em;
   }
 
   nav {
-    height: 2em;
+    height: 2.5em;
     padding-top: 1em;
     margin-bottom: 2em;
+  }
+
+  a:hover {
+    text-decoration: underline;
   }
 
   .nav-flex {
@@ -266,13 +272,21 @@ ul.main-nav li {
     border-bottom: 3px solid #08bdbd;
   }
 
-  .push-left {
-    margin-right: auto;
+  button {
+    color: #000;
+    font-weight: bold;
+    background-color: #6f6;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 25%;
   }
 
-  /* footer stylings */
-  footer li {
-    float: left;
+  button:hover {
+    padding: 16px;
+  }
+
+  .push-left {
+    margin-right: auto;
   }
 }
 
@@ -280,7 +294,7 @@ ul.main-nav li {
   /* main section stylings */
 
   main,
-  footer {
+  nav {
     font-size: 1.2em;
   }
 }
