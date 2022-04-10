@@ -53,17 +53,6 @@ main img {
   font-size: 3em;
 }
 
-li.push-left.initials {
-  background-color: #000;
-}
-
-.initials p {
-  color: #6f6;
-  margin-top: 0.1em;
-  margin-bottom: 0.1em;
-  background-color: #000;
-}
-
 h1 {
   letter-spacing: -0.01em;
   transform: scaleY(3);
@@ -96,9 +85,9 @@ h1,
   font-family: "Press Start 2P", cursive;
 }
 
-li.initials {
+/* li.initials {
   color: #5eec59;
-}
+} */
 
 h3 {
   padding-top: 1em;
@@ -121,13 +110,16 @@ footer {
 /* nav */
 ul.main-nav li {
   display: block;
-  background-color: white;
+  border: 1px solid #08bdbd;
   margin-bottom: 5px;
   padding-top: 15px;
   padding-bottom: 15px;
   text-transform: uppercase;
   text-decoration: none;
-  color: black;
+}
+
+li.push-left.initials {
+  border: none;
 }
 
 /* pulse text effect */
