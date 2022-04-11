@@ -44,8 +44,9 @@ main img {
 }
 
 /* base styles */
-.initials {
+nav.top li.initials {
   font-size: 3em;
+  border: none;
 }
 
 h1 {
@@ -187,6 +188,10 @@ ul.main-nav li {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+  }
+
+  nav.top li.initials {
+    font-size: 1.5em;
   }
 
   article {
