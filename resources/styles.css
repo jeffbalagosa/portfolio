@@ -1,9 +1,4 @@
 /* layout */
-.push-left {
-  background-color: inherit;
-  padding-top: 0.5em;
-  padding-bottom: 0.5em;
-}
 
 .container {
   width: 95%;
@@ -118,10 +113,6 @@ ul.main-nav li {
   text-decoration: none;
 }
 
-li.push-left.initials {
-  border: none;
-}
-
 /* pulse text effect */
 
 @-webkit-keyframes pulseText {
@@ -184,11 +175,12 @@ li.push-left.initials {
 /* Media queries for different screen sizes */
 
 @media (min-width: 768px) {
-  /* layout */
+  /* nav */
 
   ul.main-nav li {
     background-color: inherit;
     color: inherit;
+    border: none;
   }
 
   div.flex-container {
@@ -230,6 +222,8 @@ li.push-left.initials {
 
   .initials {
     font-size: 1em;
+    flex-grow: 3;
+    text-align: justify;
   }
 
   .initials p {
@@ -275,10 +269,6 @@ li.push-left.initials {
 
   .button:hover {
     padding: 16px;
-  }
-
-  .push-left {
-    margin-right: auto;
   }
 }
 
