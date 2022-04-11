@@ -258,6 +258,11 @@ ul.main-nav li {
     border-bottom: 3px solid #08bdbd;
   }
 
+  nav.bottom {
+    margin-top: 2.5em;
+    border-top: 3px solid #08bdbd;
+  }
+
   .button {
     color: #000;
     font-weight: bold;
