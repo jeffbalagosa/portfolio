@@ -46,11 +46,6 @@ header p {
   margin-top: 0.9em;
 }
 
-h1:hover,
-.initials:hover {
-  color: #afa;
-}
-
 h3 {
   padding-top: 1em;
 }
@@ -177,6 +172,11 @@ footer {
     width: 600px;
   }
 
+  header {
+    height: 800px;
+    position: relative;
+  }
+
   /* nav */
 
   ul.main-nav li {
@@ -250,31 +250,31 @@ footer {
   .button:hover {
     padding: 16px;
   }
-}
 
-/* hero section */
+  /* hero section */
 
-header {
-  height: 800px;
-  position: relative;
-}
+  h1:hover,
+  .initials:hover {
+    color: #afa;
+  }
 
-div.header-container {
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
+  div.header-container {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
 
-h1 {
-  transform: scaleY(5);
-}
+  h1 {
+    transform: scaleY(5);
+  }
 
-header p {
-  font-size: 2.5em;
-  margin-top: 1.5em;
+  header p {
+    font-size: 2.5em;
+    margin-top: 1.5em;
+  }
 }
 
 @media (min-width: 1024px) {
