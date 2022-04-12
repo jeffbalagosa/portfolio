@@ -1,15 +1,5 @@
 /* layout */
 
-.container {
-  width: 95%;
-  margin: 0 auto;
-  max-width: 2085px;
-}
-
-.footer-nav-flex {
-  display: flex;
-}
-
 body {
   font-family: "Rubik", sans-serif;
   text-align: center;
@@ -43,12 +33,6 @@ main img {
   box-shadow: 10px 10px 5px #f71735;
 }
 
-/* base styles */
-nav.top li.initials {
-  font-size: 3em;
-  border: none;
-}
-
 h1 {
   letter-spacing: -0.01em;
   transform: scaleY(3);
@@ -67,24 +51,6 @@ h1:hover,
   color: #afa;
 }
 
-a {
-  text-decoration: none;
-  color: #6f6;
-}
-
-a:hover {
-  color: #08bdbd;
-}
-
-h1,
-.initials {
-  font-family: "Press Start 2P", cursive;
-}
-
-/* li.initials {
-  color: #5eec59;
-} */
-
 h3 {
   padding-top: 1em;
 }
@@ -99,11 +65,18 @@ h2 {
   font-size: 2em;
 }
 
-footer {
-  margin-top: 0;
+.container {
+  width: 95%;
+  margin: 0 auto;
+  max-width: 2085px;
+}
+
+.footer-nav-flex {
+  display: flex;
 }
 
 /* nav */
+
 ul.main-nav li {
   display: block;
   border: 1px solid #08bdbd;
@@ -112,6 +85,29 @@ ul.main-nav li {
   padding-bottom: 15px;
   text-transform: uppercase;
   text-decoration: none;
+}
+
+nav.top li.initials {
+  font-size: 3em;
+  border: none;
+}
+
+a {
+  text-decoration: none;
+  color: #6f6;
+}
+
+a:hover {
+  color: #08bdbd;
+}
+
+h1,
+.initials {
+  font-family: "Press Start 2P", cursive;
+}
+
+footer {
+  margin-top: 0;
 }
 
 /* pulse text effect */
@@ -176,6 +172,11 @@ ul.main-nav li {
 /* Media queries for different screen sizes */
 
 @media (min-width: 768px) {
+  /* layout */
+  article {
+    width: 600px;
+  }
+
   /* nav */
 
   ul.main-nav li {
@@ -194,48 +195,17 @@ ul.main-nav li {
     font-size: 1.5em;
   }
 
-  article {
-    width: 600px;
-  }
-
-  /* hero section */
-
-  header {
-    height: 800px;
-    position: relative;
-  }
-
-  div.header-container {
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-  }
-
-  h1 {
-    transform: scaleY(5);
-  }
-
-  header p {
-    font-size: 2.5em;
-    margin-top: 1.5em;
-  }
-
-  /* /hero section */
-
   .initials {
     font-size: 1em;
     flex-grow: 3;
     text-align: justify;
   }
 
-  .initials p {
+  /* .initials p {
     margin-top: 0.9em;
     margin-left: 0.3em;
     margin-right: 0.3em;
-  }
+  } */
 
   nav {
     height: 2.5em;
@@ -282,8 +252,33 @@ ul.main-nav li {
   }
 }
 
+/* hero section */
+
+header {
+  height: 800px;
+  position: relative;
+}
+
+div.header-container {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+h1 {
+  transform: scaleY(5);
+}
+
+header p {
+  font-size: 2.5em;
+  margin-top: 1.5em;
+}
+
 @media (min-width: 1024px) {
-  /* main section stylings */
+  /* main */
 
   main,
   nav {
