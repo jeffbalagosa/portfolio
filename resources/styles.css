@@ -70,6 +70,19 @@ h2 {
   display: flex;
 }
 
+.largescreens {
+  display: none;
+}
+
+li.smallscreens {
+  text-align: right;
+}
+
+.bottom ul {
+  display: flex;
+  justify-content: space-between;
+}
+
 /* nav */
 
 ul.main-nav li {
@@ -96,14 +109,25 @@ a:hover {
   color: #08bdbd;
 }
 
+nav.bottom {
+  margin-top: 2.5em;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+  border-top: 3px solid #08bdbd;
+}
+
 h1,
 .initials {
   font-family: "Press Start 2P", cursive;
 }
 
-footer {
-  margin-top: 0;
+nav.bottom li.initials {
+  font-size: 1.5em;
 }
+
+/* footer {
+  margin-top: 0;
+} */
 
 /* pulse text effect */
 
@@ -177,6 +201,14 @@ footer {
     position: relative;
   }
 
+  .largescreens {
+    display: block;
+  }
+
+  .smallscreens {
+    display: none;
+  }
+
   /* nav */
 
   ul.main-nav li {
@@ -196,7 +228,7 @@ footer {
   }
 
   .initials {
-    font-size: 1em;
+    /* font-size: 1em; */
     flex-grow: 3;
     text-align: justify;
   }
@@ -231,11 +263,6 @@ footer {
 
   nav.top {
     border-bottom: 3px solid #08bdbd;
-  }
-
-  nav.bottom {
-    margin-top: 2.5em;
-    border-top: 3px solid #08bdbd;
   }
 
   .button {
