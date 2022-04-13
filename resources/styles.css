@@ -276,6 +276,9 @@ nav.bottom li.initials {
 
   .button:hover {
     padding: 16px;
+    color: #000;
+    text-decoration: none;
+    background-color: #afa;
   }
 
   /* hero section */
