@@ -1,10 +1,10 @@
 # Ideas, notes, thoughts, etc...
 
-## Color Scheme
-
-![Colors for the site](portfolio%20color%20pallete.png "Colors")
-
 ## Fonts
 
 - h1 = Press Start 2P
 - Everything else = Rubik
+
+## Background Video
+
+- [Green Binary Code On Back Background, Digital Computer Concept](https://www.videezy.com/backgrounds/39857-green-binary-code-on-back-background-digital-computer-concept)
