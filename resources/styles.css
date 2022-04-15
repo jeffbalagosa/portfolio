@@ -4,11 +4,12 @@
   font-family: "Rubik", sans-serif;
   text-align: center;
   color: #6f6;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.85);
 }
 
 main {
   border: 3px solid #08bdbd;
+  background-color: #000;
 }
 
 main h2 {
@@ -113,6 +114,7 @@ a {
   bottom: 0;
   min-width: 100%;
   min-height: 100%;
+  z-index: -1;
 }
 
 a:hover {
@@ -121,8 +123,9 @@ a:hover {
 
 nav.bottom {
   margin-top: 2.5em;
+  margin-bottom: 0;
   padding-top: 1.5em;
-  padding-bottom: 1.5em;
+  padding-bottom: 1em;
   border-top: 3px solid #08bdbd;
 }
 
