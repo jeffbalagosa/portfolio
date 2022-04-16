@@ -262,7 +262,7 @@ nav.bottom li.initials {
     text-decoration: underline;
   }
 
-  .nav-flex {
+  .flex-container {
     display: flex;
   }
 
