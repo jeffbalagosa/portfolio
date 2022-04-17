@@ -21,7 +21,7 @@ main p {
   text-align: justify;
   margin-left: 1em;
   margin-right: 1em;
-  margin-bottom: 2.5em;
+  margin-bottom: 1em;
 }
 
 section p,
@@ -199,6 +199,29 @@ nav.bottom li.initials {
   -o-animation-timing-function: ease-in-out;
   animation-timing-function: ease-in-out;
   border: 0px;
+}
+
+/* main section */
+
+#portfolio article {
+  margin-top: 2em;
+}
+
+article ul.flex-container {
+  display: flex;
+  justify-content: space-between;
+}
+article ul.flex-container.container {
+  margin: 1em;
+}
+
+article a.button {
+  color: #000;
+  font-weight: bold;
+  background-color: #6f6;
+  padding-left: 8px;
+  padding-right: 8px;
+  border-radius: 25%;
 }
 
 /* Media queries for different screen sizes */
