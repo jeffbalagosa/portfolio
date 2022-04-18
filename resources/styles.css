@@ -1,5 +1,4 @@
 /* layout */
-
 .bg-overlay {
   font-family: "Rubik", sans-serif;
   text-align: center;
@@ -86,7 +85,8 @@ li.smallscreens {
 
 /* nav */
 
-ul.main-nav li {
+ul.main-nav li,
+article ul li {
   display: block;
   border: 1px solid #08bdbd;
   margin-bottom: 5px;
@@ -207,23 +207,6 @@ nav.bottom li.initials {
   margin-top: 2em;
 }
 
-article ul.flex-container {
-  display: flex;
-  justify-content: space-between;
-}
-article ul.flex-container.container {
-  margin: 1em;
-}
-
-article a.button {
-  color: #000;
-  font-weight: bold;
-  background-color: #6f6;
-  padding-left: 8px;
-  padding-right: 8px;
-  border-radius: 25%;
-}
-
 /* Media queries for different screen sizes */
 
 @media (min-width: 768px) {
@@ -243,6 +226,27 @@ article a.button {
 
   .smallscreens {
     display: none;
+  }
+
+  article ul.flex-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  article ul.flex-container.container {
+    margin: 1em;
+  }
+
+  article a.button {
+    color: #000;
+    font-weight: bold;
+    background-color: #6f6;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 25%;
+  }
+
+  article ul li {
+    border: none;
   }
 
   /* nav */
