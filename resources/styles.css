@@ -324,9 +324,10 @@ nav.bottom li.initials {
 
   /* hero section */
 
-  h1:hover,
-  .initials:hover {
+  h1:hover {
     color: #afa;
+    transition-timing-function: ease-in;
+    transition: 0.25s;
   }
 
   div.header-container {
