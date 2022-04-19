@@ -13,3 +13,10 @@
 ## Which Projects to Showcase
 
 - Wheel of Success Game (Unit 6 Project)
+- Wheel of Success Game
+- Lightbox Photo Viewer
+- Fallout 4 Plot Generator
+- Password Suggestion Tool
+- List Randomizer and Picker App
+- Content Management System
+  - [Walkthrough](https://flatlogic.com/blog/how-to-build-a-blog-on-react/)
