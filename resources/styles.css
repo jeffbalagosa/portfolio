@@ -1,9 +1,15 @@
 /* layout */
+body {
+  background-image: url("img/arcade.jpg");
+  background-size: 100%;
+  z-index: -1;
+}
+
 .bg-overlay {
   font-family: "Rubik", sans-serif;
   text-align: center;
   color: #6f6;
-  background: rgba(0, 0, 0, 0.85);
+  background: rgba(0, 0, 0, 0.8);
 }
 
 main {
@@ -109,6 +115,7 @@ a {
 }
 
 /* background video */
+/* remove display: none if need to put it back */
 
 #bgVideo {
   position: fixed;
@@ -117,6 +124,7 @@ a {
   min-width: 100%;
   min-height: 100%;
   z-index: -1;
+  display: none;
 }
 
 a:hover {
@@ -207,6 +215,13 @@ nav.bottom li.initials {
 
 #portfolio article {
   margin-top: 2em;
+}
+
+/* Contact Area */
+#contact {
+  background-color: #000;
+  padding: 1rem;
+  border-radius: 10px;
 }
 
 /* Media queries for different screen sizes */
