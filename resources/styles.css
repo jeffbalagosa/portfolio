@@ -54,6 +54,7 @@ h1 {
 header p {
   font-size: 2em;
   margin-top: 0.9em;
+  cursor: pointer;
 }
 
 h3 {
