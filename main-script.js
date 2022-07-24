@@ -18,6 +18,7 @@ const tagLineArr = [
   "Loves Taking On Fun Challenges",
   "Develops A Lot Of His Own Automations",
   "Loves Logic And Procedural Puzzles",
+  "Loves Discovering New Ways To Automate His Life",
 ];
 
 const headerContainer = document.getElementById("header-container");
