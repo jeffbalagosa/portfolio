@@ -1,6 +1,6 @@
 const tagLineArr = [
   "Is A Brazilian Jiu Jitsu Blackbelt (Est. 2020)",
-  "Is a Practicing Stoic.",
+  "Is a Practicing Stoic",
   "Has Trained With UFC Champions",
   "Loves His Wife And 2 Kids",
   "Spends Too Much Time On Video Games",
