@@ -117,19 +117,6 @@ a {
   color: #6f6;
 }
 
-/* background video */
-/* remove display: none if need to put it back */
-
-#bgVideo {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
-  z-index: -1;
-  display: none;
-}
-
 a:hover {
   color: #08bdbd;
 }
