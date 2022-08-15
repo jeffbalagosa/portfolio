@@ -33,4 +33,4 @@ function tagLineRandomizer() {
 
 headerContainer.onclick = tagLineRandomizer;
 
-setInterval(tagLineRandomizer, 30000);
+setInterval(tagLineRandomizer, 5000);
