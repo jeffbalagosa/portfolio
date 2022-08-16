@@ -2,7 +2,7 @@ const tagLineArr = [
   "Is A Brazilian Jiu Jitsu Blackbelt (Est. 2020)",
   "Is a Practicing Stoic",
   "Has Trained With UFC Champions",
-  "Loves His Wife And 2 Kids",
+  "Loves His Dog, Wife, And 2 Kids  ...sometimes in that order.",
   "Spends Too Much Time On Video Games",
   "Is Passionate About Technology And Engineering",
   "Is A Martial Arts Instructor",
@@ -20,6 +20,7 @@ const tagLineArr = [
   "Loves Logic And Procedural Puzzles",
   "Loves Discovering New Ways To Automate His Life",
   "Has Peer Reviewed Other People's Code",
+  "Approaches Coding As A Discipline, Similar To martial Arts",
 ];
 
 const headerContainer = document.getElementById("header-container");
