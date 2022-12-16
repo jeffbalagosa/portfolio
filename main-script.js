@@ -32,6 +32,14 @@ function tagLineRandomizer() {
   headerTagLine.innerHTML = tagLine;
 }
 
+function setProgressBar(id, percentage) {
+  document.getElementById(id).style.width = percentage + "%";
+}
+
 headerContainer.onclick = tagLineRandomizer;
 
 setInterval(tagLineRandomizer, 5000);
+
+setProgressBar("javascript", 80);
+setProgressBar("python", 70);
+setProgressBar("react", 45);
