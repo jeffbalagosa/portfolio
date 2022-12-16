@@ -104,13 +104,44 @@ li.smallscreens {
   margin-top: 1em;
   margin-bottom: 1em;
   box-shadow: inset 0 0 10px black;
+  overflow: hidden;
+}
+
+.progress-bar-outter:hover {
+  box-shadow: 10px 10px 100px #f71735;
 }
 
 .progress-bar-inner {
-  width: 10%;
   height: 100%;
   background-color: #6f6;
-  border-radius: 10px 0 0 10px;
+}
+
+#javascript {
+  width: 85%;
+}
+
+#html {
+  width: 100%;
+}
+
+#css {
+  width: 98%;
+}
+
+#python {
+  width: 80%;
+}
+
+#react {
+  width: 45%;
+}
+
+#bash {
+  width: 60%;
+}
+
+#powershell {
+  width: 70%;
 }
 
 /* nav */
