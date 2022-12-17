@@ -96,6 +96,12 @@ li.smallscreens {
 
 /* components */
 
+hr {
+  border: 1px solid #08bdbd;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
 .progress-bar-outter {
   width: 100%;
   height: 20px;
@@ -108,7 +114,7 @@ li.smallscreens {
 }
 
 .progress-bar-outter:hover {
-  box-shadow: 10px 10px 100px #f71735;
+  box-shadow: 10px 10px 100px whitesmoke;
 }
 
 .progress-bar-inner {
