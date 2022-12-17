@@ -42,6 +42,19 @@ main img {
   box-shadow: 10px 10px 20px #f71735;
 }
 
+img.profile-pic {
+  width: 25%;
+  height: auto;
+  border-radius: 50%;
+  box-shadow: 10px 10px 20px #f71735;
+}
+
+div.about {
+  margin-top: 2em;
+  padding-left: 3em;
+  padding-right: 3em;
+}
+
 h1 {
   letter-spacing: -0.01em;
   transform: scaleY(3);
@@ -100,6 +113,7 @@ hr {
   border: 1px solid #08bdbd;
   margin-top: 1em;
   margin-bottom: 1em;
+  width: 90%;
 }
 
 .progress-bar-outter {
