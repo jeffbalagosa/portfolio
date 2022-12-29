@@ -304,7 +304,7 @@ nav.bottom li.initials {
 
 /* Media queries for different screen sizes */
 
-@media (max-width: 766px) {
+@media (max-width: 767px) {
   #proficiencies > div > article {
     width: 100%;
     margin: 0 auto;
@@ -340,6 +340,12 @@ nav.bottom li.initials {
 
   article ul li {
     border: none;
+  }
+
+  #proficiencies > div > article {
+    width: 17%;
+    margin-left: 2em;
+    margin-right: 1em;
   }
 
   /* nav */
@@ -444,6 +450,22 @@ nav.bottom li.initials {
   }
 }
 
+@media (min-width: 835px) {
+  #proficiencies > div > article {
+    width: 18%;
+    margin-left: 2em;
+    margin-right: 1em;
+  }
+}
+
+@media (min-width: 888px) {
+  #proficiencies > div > article {
+    width: 17%;
+    margin-left: 5em;
+    margin-right: 1em;
+  }
+}
+
 @media (min-width: 1024px) {
   /* main */
   h1 {
@@ -458,5 +480,64 @@ nav.bottom li.initials {
   main,
   nav {
     font-size: 1.2em;
+  }
+
+  #proficiencies > div > article {
+    width: 36%;
+    margin-left: 4em;
+    margin-right: 1em;
+  }
+}
+
+@media (min-width: 1318px) {
+  /* main */
+  #proficiencies > div > article {
+    width: 24%;
+    margin-left: 4em;
+    margin-right: 1em;
+  }
+}
+
+@media (min-width: 1555px) {
+  #proficiencies > div > article {
+    width: 17%;
+    margin-left: 4em;
+    margin-right: 1em;
+  }
+}
+
+@media (min-width: 1565px) {
+  /* main */
+  #proficiencies > div > article {
+    width: 17%;
+    margin-left: 4em;
+    margin-right: 1em;
+  }
+}
+
+@media (min-width: 1839px) {
+  /* main */
+  #proficiencies > div > article {
+    width: 17%;
+    margin-left: 5em;
+    margin-right: 1em;
+  }
+}
+
+@media (min-width: 2025px) {
+  /* main */
+  #proficiencies > div > article {
+    width: 17.5%;
+    margin-left: 5em;
+    margin-right: 1em;
+  }
+}
+
+@media (min-width: 2056px) {
+  /* main */
+  #proficiencies > div > article {
+    width: 17.6%;
+    margin-left: 5em;
+    margin-right: 1em;
   }
 }
