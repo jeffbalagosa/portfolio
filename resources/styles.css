@@ -1,7 +1,7 @@
 /* layout */
 body {
-  background-image: url("img/ninja-favlogo.png");
-  background-size: 50%;
+  background-image: url("img/vscode_blurred.png");
+  background-size: 100%;
   background-attachment: fixed;
   z-index: -1;
 }
@@ -10,12 +10,12 @@ body {
   font-family: "Rubik", sans-serif;
   text-align: center;
   color: #6f6;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.3);
 }
 
 main {
   overflow: hidden;
-  border: 3px solid #08bdbd;
+  /* border: 3px solid #08bdbd; */
   background-color: rgba(0, 0, 0, 0.5);
 }
 
@@ -51,6 +51,7 @@ img.profile-pic {
 
 div.about {
   margin-top: 2em;
+  margin-bottom: 2em;
   padding-left: 3em;
   padding-right: 3em;
 }
@@ -105,20 +106,6 @@ li.smallscreens {
 .bottom ul {
   display: flex;
   justify-content: space-between;
-}
-
-#proficiencies > div {
-  justify-content: flex-start;
-}
-
-#proficiencies > div > article {
-  width: 15%;
-  margin-left: 1em;
-  margin-right: 1em;
-}
-
-#proficiencies > div > article > h3 {
-  font-size: 1em;
 }
 
 /* components */
@@ -297,19 +284,16 @@ nav.bottom li.initials {
 
 /* Contact Area */
 #contact {
-  background-color: #000;
   padding: 1rem;
   border-radius: 10px;
+  font-size: 1.25em;
+}
+
+#contact p {
+  text-align: center;
 }
 
 /* Media queries for different screen sizes */
-
-@media (max-width: 767px) {
-  #proficiencies > div > article {
-    width: 100%;
-    margin: 0 auto;
-  }
-}
 
 @media (min-width: 768px) {
   /* layout */
@@ -340,12 +324,6 @@ nav.bottom li.initials {
 
   article ul li {
     border: none;
-  }
-
-  #proficiencies > div > article {
-    width: 17%;
-    margin-left: 2em;
-    margin-right: 1em;
   }
 
   /* nav */
@@ -450,22 +428,6 @@ nav.bottom li.initials {
   }
 }
 
-@media (min-width: 835px) {
-  #proficiencies > div > article {
-    width: 18%;
-    margin-left: 2em;
-    margin-right: 1em;
-  }
-}
-
-@media (min-width: 888px) {
-  #proficiencies > div > article {
-    width: 17%;
-    margin-left: 5em;
-    margin-right: 1em;
-  }
-}
-
 @media (min-width: 1024px) {
   /* main */
   h1 {
@@ -480,64 +442,5 @@ nav.bottom li.initials {
   main,
   nav {
     font-size: 1.2em;
-  }
-
-  #proficiencies > div > article {
-    width: 36%;
-    margin-left: 4em;
-    margin-right: 1em;
-  }
-}
-
-@media (min-width: 1318px) {
-  /* main */
-  #proficiencies > div > article {
-    width: 24%;
-    margin-left: 4em;
-    margin-right: 1em;
-  }
-}
-
-@media (min-width: 1555px) {
-  #proficiencies > div > article {
-    width: 17%;
-    margin-left: 4em;
-    margin-right: 1em;
-  }
-}
-
-@media (min-width: 1565px) {
-  /* main */
-  #proficiencies > div > article {
-    width: 17%;
-    margin-left: 4em;
-    margin-right: 1em;
-  }
-}
-
-@media (min-width: 1839px) {
-  /* main */
-  #proficiencies > div > article {
-    width: 17%;
-    margin-left: 5em;
-    margin-right: 1em;
-  }
-}
-
-@media (min-width: 2025px) {
-  /* main */
-  #proficiencies > div > article {
-    width: 17.5%;
-    margin-left: 5em;
-    margin-right: 1em;
-  }
-}
-
-@media (min-width: 2056px) {
-  /* main */
-  #proficiencies > div > article {
-    width: 17.6%;
-    margin-left: 5em;
-    margin-right: 1em;
   }
 }
