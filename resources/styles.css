@@ -15,7 +15,6 @@ body {
 
 main {
   overflow: hidden;
-  /* border: 3px solid #08bdbd; */
   background-color: rgba(0, 0, 0, 0.5);
 }
 
@@ -128,15 +127,6 @@ hr {
   overflow: hidden;
 }
 
-.progress-bar-outter:hover {
-  box-shadow: 10px 10px 100px whitesmoke;
-}
-
-.progress-bar-inner {
-  height: 100%;
-  background-color: #6f6;
-}
-
 #javascript {
   width: 85%;
 }
@@ -171,7 +161,6 @@ hr {
 
 /* nav */
 
-ul.main-nav li,
 article ul li {
   display: block;
   margin-bottom: 15px;
@@ -181,18 +170,26 @@ article ul li {
   text-decoration: none;
 }
 
-nav.top li.initials {
-  font-size: 3em;
-  border: none;
+ul.main-nav li {
+  padding-top: 1rem;
+  line-height: 2.5em;
+  font-size: 1.25rem;
+}
+
+li > a {
+  margin-right: 2rem;
+  background-color: rgba(39, 29, 29, 0.5);
+  padding: 0.25rem;
+}
+
+nav > ul {
+  width: 95%;
+  margin: 0 auto;
 }
 
 a {
   text-decoration: none;
   color: #6f6;
-}
-
-a:hover {
-  color: #08bdbd;
 }
 
 nav.bottom {
@@ -203,18 +200,9 @@ nav.bottom {
   border-top: 3px solid #08bdbd;
 }
 
-h1,
-.initials {
+h1 {
   font-family: "Press Start 2P", cursive;
 }
-
-nav.bottom li.initials {
-  font-size: 1.5em;
-}
-
-/* footer {
-  margin-top: 0;
-} */
 
 /* pulse text effect */
 
@@ -301,7 +289,7 @@ nav.bottom li.initials {
   }
 
   header {
-    height: 800px;
+    height: 100vh;
     position: relative;
   }
 
@@ -339,21 +327,16 @@ nav.bottom li.initials {
     justify-content: space-around;
   }
 
-  nav.top li.initials {
+  nav.top {
     font-size: 1.5em;
   }
 
-  .initials {
-    /* font-size: 1em; */
+  li.logo-li {
     flex-grow: 3;
-    text-align: justify;
+    text-align: left;
+    margin: 0;
+    padding: 0;
   }
-
-  /* .initials p {
-    margin-top: 0.9em;
-    margin-left: 0.3em;
-    margin-right: 0.3em;
-  } */
 
   nav {
     height: 2.5em;
@@ -362,19 +345,24 @@ nav.bottom li.initials {
   }
 
   a:hover {
-    text-decoration: underline;
+    font-size: 1.5rem;
+    color: rgb(226, 248, 226);
   }
 
   .flex-container {
     display: flex;
   }
 
-  nav li,
-  .initials {
+  nav li {
     color: #6f6;
     margin: 0 15px;
     background-color: inherit;
     font-size: 1rem;
+  }
+
+  #logo {
+    border-radius: 50%;
+    box-shadow: #6f6 0px 0px 5px 5px;
   }
 
   .button {
