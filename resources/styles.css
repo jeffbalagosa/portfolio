@@ -345,8 +345,10 @@ h1 {
   }
 
   a:hover {
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: rgb(226, 248, 226);
+    transition-timing-function: ease-in;
+    transition: 0.25s;
   }
 
   .flex-container {
