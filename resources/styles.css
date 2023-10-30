@@ -299,21 +299,23 @@ header {
   position: relative;
 }
 
+article {
+  width: 600px;
+}
+
+article ul.flex-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+article ul.flex-container.container {
+  margin: 1em;
+}
+
 /* Media queries for different screen sizes */
 
 @media (min-width: 768px) {
   /* layout */
-  article {
-    width: 600px;
-  }
-
-  article ul.flex-container {
-    display: flex;
-    justify-content: space-between;
-  }
-  article ul.flex-container.container {
-    margin: 1em;
-  }
 
   article ul li {
     border: none;
