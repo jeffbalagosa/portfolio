@@ -277,17 +277,34 @@ nav.bottom {
   text-align: center;
 }
 
+header p {
+  font-size: 2.5em;
+  margin-top: 4em;
+}
+
+main,
+nav {
+  font-size: 1.2em;
+}
+
+a:hover {
+  font-size: 2rem;
+  color: rgb(226, 248, 226);
+  transition-timing-function: ease-in;
+  transition: 0.25s;
+}
+
+header {
+  height: 100vh;
+  position: relative;
+}
+
 /* Media queries for different screen sizes */
 
 @media (min-width: 768px) {
   /* layout */
   article {
     width: 600px;
-  }
-
-  header {
-    height: 100vh;
-    position: relative;
   }
 
   article ul.flex-container {
@@ -331,13 +348,6 @@ nav.bottom {
     height: 2.5em;
     padding-top: 1em;
     margin-bottom: 2em;
-  }
-
-  a:hover {
-    font-size: 2rem;
-    color: rgb(226, 248, 226);
-    transition-timing-function: ease-in;
-    transition: 0.25s;
   }
 
   .flex-container {
@@ -390,24 +400,5 @@ nav.bottom {
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-  }
-
-  header p {
-    font-size: 2.5em;
-    margin-top: 1.5em;
-  }
-}
-
-@media (min-width: 1024px) {
-  /* main */
-
-  header p {
-    font-size: 2.5em;
-    margin-top: 3.6em;
-  }
-
-  main,
-  nav {
-    font-size: 1.2em;
   }
 }
