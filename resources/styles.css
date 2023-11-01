@@ -60,15 +60,22 @@ h1 {
   letter-spacing: -0.01em;
   transform: scale(2, 10);
   word-spacing: -1em;
-  margin-top: 2em;
-  margin-bottom: 2px;
   cursor: pointer;
 }
 
+h1:hover {
+  color: #afa;
+  transition-timing-function: ease-in;
+  transition: 0.25s;
+}
+
 header p {
-  font-size: 2em;
-  margin-top: 0.9em;
   cursor: pointer;
+  font-size: 2.5em;
+  margin-top: 4em;
+}
+h2 {
+  font-size: 2em;
 }
 
 h3 {
@@ -81,34 +88,11 @@ h3 {
   text-transform: capitalize;
 }
 
-h2 {
-  font-size: 2em;
-}
-
 .container {
   width: 95%;
   margin: 0 auto;
   max-width: 2085px;
 }
-
-.footer-nav-flex {
-  display: flex;
-}
-
-.largescreens {
-  display: none;
-}
-
-li.smallscreens {
-  text-align: right;
-}
-
-.bottom ul {
-  display: flex;
-  justify-content: space-between;
-}
-
-/* components */
 
 hr {
   border: 1px solid #08bdbd;
@@ -127,40 +111,6 @@ hr {
   box-shadow: inset 0 0 10px black;
   overflow: hidden;
 }
-
-#javascript {
-  width: 85%;
-}
-
-#html {
-  width: 100%;
-}
-
-#css {
-  width: 98%;
-}
-
-#python {
-  width: 80%;
-}
-
-#react {
-  width: 45%;
-}
-
-#bash {
-  width: 60%;
-}
-
-#powershell {
-  width: 70%;
-}
-
-#git {
-  width: 80%;
-}
-
-/* nav */
 
 article ul li {
   display: block;
@@ -260,13 +210,10 @@ nav.bottom {
   border: 0px;
 }
 
-/* main section */
-
 #portfolio article {
   margin-top: 2em;
 }
 
-/* Contact Area */
 #contact {
   padding: 1rem;
   border-radius: 10px;
@@ -275,11 +222,6 @@ nav.bottom {
 
 #contact p {
   text-align: center;
-}
-
-header p {
-  font-size: 2.5em;
-  margin-top: 4em;
 }
 
 main,
@@ -296,7 +238,6 @@ a:hover {
 
 header {
   height: 100vh;
-  position: relative;
 }
 
 article {
@@ -342,6 +283,11 @@ li.logo-li {
   padding: 0;
 }
 
+#logo {
+  border-radius: 50%;
+  box-shadow: #6f6 0px 0px 5px 5px;
+}
+
 nav {
   height: 2.5em;
   padding-top: 1em;
@@ -359,11 +305,6 @@ nav li {
   font-size: 1rem;
 }
 
-#logo {
-  border-radius: 50%;
-  box-shadow: #6f6 0px 0px 5px 5px;
-}
-
 .button {
   color: #6f6;
   font-weight: bold;
@@ -379,12 +320,6 @@ nav li {
   text-decoration: none;
   background-color: #afa;
   box-shadow: 10px 10px 100px #f71735;
-  transition-timing-function: ease-in;
-  transition: 0.25s;
-}
-
-h1:hover {
-  color: #afa;
   transition-timing-function: ease-in;
   transition: 0.25s;
 }
