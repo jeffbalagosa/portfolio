@@ -45,24 +45,33 @@ headerContainer.onclick = tagLineRandomizer;
 setInterval(tagLineRandomizer, 5000);
 
 // scroll animation
-
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add("show");
-    } else {
-      entry.target.classList.remove("show");
-    }
+const animateItems = (hiddenElementsSelector, staggerItemsSelector) => {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("show");
+      } else {
+        entry.target.classList.remove("show");
+      }
+    });
   });
-});
 
-const hiddenElements = document.querySelectorAll(".hidden");
-hiddenElements.forEach((e) => observer.observe(e));
+  const hiddenElements = document.querySelectorAll(hiddenElementsSelector);
+  hiddenElements.forEach((e) => observer.observe(e));
 
-// stagger the animation for each card
-const cards = document.querySelectorAll(".card");
+  // Check if staggerItemsSelector is provided
+  if (staggerItemsSelector) {
+    // stagger the animation for each item
+    const itemsToStagger = document.querySelectorAll(staggerItemsSelector);
 
-cards.forEach((card, index) => {
-  // Set the transition-delay (in milliseconds)
-  card.style.transitionDelay = `${index * 200}ms`;
-});
+    itemsToStagger.forEach((item, index) => {
+      // Set the transition-delay (in milliseconds)
+      item.style.transitionDelay = `${index * 200}ms`;
+    });
+  }
+};
+
+animateItems("article.hidden", "article.card");
+animateItems("img.hidden", "img.profile-pic");
+animateItems("#about-me > div.about");
+animateItems("#contact");
