@@ -43,3 +43,26 @@ function tagLineRandomizer() {
 headerContainer.onclick = tagLineRandomizer;
 
 setInterval(tagLineRandomizer, 5000);
+
+// scroll animation
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("show");
+    } else {
+      entry.target.classList.remove("show");
+    }
+  });
+});
+
+const hiddenElements = document.querySelectorAll(".hidden");
+hiddenElements.forEach((e) => observer.observe(e));
+
+// stagger the animation for each card
+const cards = document.querySelectorAll(".card");
+
+cards.forEach((card, index) => {
+  // Set the transition-delay (in milliseconds)
+  card.style.transitionDelay = `${index * 200}ms`;
+});
