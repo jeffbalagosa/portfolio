@@ -207,16 +207,6 @@ nav.bottom {
   margin-top: 2em;
 }
 
-#contact {
-  padding: 1rem;
-  border-radius: 10px;
-  font-size: 1.25em;
-}
-
-#contact p {
-  text-align: center;
-}
-
 main,
 nav {
   font-size: 1.2em;
@@ -324,6 +314,15 @@ div.header-container {
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+}
+
+section#contact.container {
+  width: 60%;
+  padding: 1rem;
+  border-radius: 10px;
+  font-size: 1.25em;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 .hidden {
