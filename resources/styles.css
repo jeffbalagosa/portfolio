@@ -23,7 +23,7 @@ main h2 {
 }
 
 main p {
-  text-align: justify;
+  text-align: left;
   margin-left: 1em;
   margin-right: 1em;
   margin-bottom: 1em;
@@ -42,6 +42,7 @@ main img {
 
 .card {
   background-color: rgba(0, 0, 0, 0.6);
+  height: fit-content;
 }
 
 img.profile-pic {
@@ -65,6 +66,7 @@ h1 {
   transform: scale(2, 10);
   word-spacing: -1em;
   cursor: pointer;
+  margin-top: 30%;
 }
 
 h1:hover {
@@ -107,24 +109,14 @@ hr {
 }
 
 article ul li {
-  display: block;
   margin-bottom: 15px;
   padding-top: 15px;
-  padding-bottom: 15px;
-  text-transform: uppercase;
-  text-decoration: none;
 }
 
 ul.main-nav li {
   padding-top: 1rem;
   line-height: 2.5em;
   font-size: 1.25rem;
-}
-
-li > a {
-  margin-right: 2rem;
-  background-color: rgba(39, 29, 29, 0.5);
-  padding: 0.25rem;
 }
 
 nav > ul {
@@ -196,9 +188,9 @@ a {
   border: 0px;
 }
 
-#portfolio article {
+/* #portfolio article {
   margin-top: 2em;
-}
+} */
 
 main,
 nav {
@@ -218,6 +210,8 @@ header {
 
 article {
   width: 600px;
+  margin: 0.5rem;
+  padding: 1.5rem;
 }
 
 article ul.flex-container {
