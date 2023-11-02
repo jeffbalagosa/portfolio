@@ -75,7 +75,7 @@ h1:hover {
   transition: 0.25s;
 }
 
-header p {
+#header-tagline {
   cursor: pointer;
   font-size: 2.5em;
   margin-top: 4em;

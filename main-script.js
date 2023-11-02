@@ -34,18 +34,12 @@ const tagLineArr = [
 const headerContainer = document.getElementById("header-container");
 const headerTagLine = document.getElementById("header-tagline");
 
-function tagLineRandomizer() {
+const tagLineRandomizer = () => {
   let tagLine = chance.pickone(tagLineArr);
-  console.log(tagLine);
   headerTagLine.innerHTML = tagLine;
-}
+};
 
-headerContainer.onclick = tagLineRandomizer;
-
-setInterval(tagLineRandomizer, 5000);
-
-// scroll animation
-const animateItems = (hiddenElementsSelector, staggerItemsSelector) => {
+const scrollAnimation = (hiddenElementsSelector, staggerItemsSelector) => {
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
@@ -71,7 +65,9 @@ const animateItems = (hiddenElementsSelector, staggerItemsSelector) => {
   }
 };
 
-animateItems("article.hidden", "article.card");
-animateItems("img.hidden", "img.profile-pic");
-animateItems("#about-me > div.about");
-animateItems("#contact");
+headerContainer.onclick = tagLineRandomizer;
+setInterval(tagLineRandomizer, 5000);
+scrollAnimation("article.hidden", "article.card");
+scrollAnimation("img.hidden", "img.profile-pic");
+scrollAnimation("#about-me > div.about");
+scrollAnimation("#contact");
