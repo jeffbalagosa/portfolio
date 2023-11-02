@@ -226,6 +226,11 @@ article ul li {
 
 /* nav */
 
+#nav li a {
+  border-radius: 25%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
 ul.main-nav li {
   background-color: inherit;
   color: inherit;
