@@ -35,7 +35,7 @@ const headerContainer = document.getElementById("header-container");
 const headerTagLine = document.getElementById("header-tagline");
 
 const tagLineRandomizer = () => {
-  let tagLine = chance.pickone(tagLineArr);
+  let tagLine = tagLineArr[Math.floor(Math.random() * tagLineArr.length)];
   headerTagLine.innerHTML = tagLine;
 };
 
