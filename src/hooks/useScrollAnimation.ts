@@ -30,7 +30,11 @@ export const useScrollAnimation = <T extends HTMLElement = HTMLElement>({
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            entry.target.classList.add('show')
+            window.requestAnimationFrame(() => {
+              entry.target.classList.add('show')
+            })
+          } else {
+            entry.target.classList.remove('show')
           }
         })
       },
@@ -39,12 +43,7 @@ export const useScrollAnimation = <T extends HTMLElement = HTMLElement>({
 
     observer.observe(element)
 
-    const animationFrame = window.requestAnimationFrame(() => {
-      element.classList.add('show')
-    })
-
     return () => {
-      window.cancelAnimationFrame(animationFrame)
       observer.disconnect()
     }
   }, [threshold])
