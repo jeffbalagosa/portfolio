@@ -110,7 +110,10 @@ The application SHALL provide a fixed top navigation bar.
 **When** the user clicks the Resume or Blog link
 **Then** the link opens in a new browser tab
 
----
+#### Scenario: Blog link targets Substack
+
+- **WHEN** the navigation renders the Blog link
+- **THEN** the Blog link points to https://jeffbalagosa.substack.com/
 
 ### Requirement: Application SHALL manage static assets correctly
 
