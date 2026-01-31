@@ -117,27 +117,27 @@ This implementation follows Test-Driven Development (TDD): write failing tests f
 - [x] 9.2 Integrate `useScrollAnimation` into AboutMe section container
 - [x] 9.3 Integrate `useScrollAnimation` into AboutMe profile images
 - [x] 9.4 Integrate `useScrollAnimation` into Contact section container
-- [ ] 9.5 Manual test: verify animations trigger on scroll and match original timing
+- [x] 9.5 Manual test: verify animations trigger on scroll and match original timing
 
 ## 10. Cleanup and Validation
 
 - [x] 10.1 Run full test suite (`npm run test:run`) - all tests pass
 - [x] 10.2 Run linter (`npm run lint`) - no errors
-- [ ] 10.3 Test in development mode (`npm run dev`) - verify visual parity
+- [x] 10.3 Test in development mode (`npm run dev`) - verify visual parity
 - [x] 10.4 Build production bundle (`npm run build`) - no errors
 - [ ] 10.5 Test production preview (`npm run preview`) - all functionality works
 - [ ] 10.6 Verify all links work (internal anchors, external tabs, buttons)
 - [ ] 10.7 Verify responsive layout at mobile, tablet, and desktop widths
-- [ ] 10.8 Remove legacy files: delete `main-script.js`, `chance.js` (if unused)
-- [ ] 10.8 Remove legacy files: delete `main-script.js`, `chance.js` (if unused)
+- [x] 10.8 Remove legacy files: delete `main-script.js`, `chance.js` (if unused)
+- [x] 10.8 Remove legacy files: delete `main-script.js`, `chance.js` (if unused)
 - [x] 10.1 Run full test suite (`npm run test:run`) - all tests pass
 - [x] 10.2 Run linter (`npm run lint`) - no errors
-- [ ] 10.3 Test in development mode (`npm run dev`) - verify visual parity
+- [x] 10.3 Test in development mode (`npm run dev`) - verify visual parity
 - [x] 10.4 Build production bundle (`npm run build`) - no errors
 - [ ] 10.5 Test production preview (`npm run preview`) - all functionality works
 - [ ] 10.6 Verify all links work (internal anchors, external tabs, buttons)
 - [ ] 10.7 Verify responsive layout at mobile, tablet, and desktop widths
-- [ ] 10.8 Remove legacy files: delete `main-script.js`, `chance.js` (if unused)
+- [x] 10.8 Remove legacy files: delete `main-script.js`, `chance.js` (if unused)
 
 ## Validation Criteria
 
