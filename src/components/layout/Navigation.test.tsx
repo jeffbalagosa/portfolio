@@ -35,10 +35,10 @@ describe('Navigation', () => {
     expect(resumeLink).toHaveAttribute('rel', 'noopener noreferrer')
   })
 
-  it('opens Blog link in a new tab with correct path', () => {
+  it('opens Blog link in a new tab with Substack URL', () => {
     render(<Navigation />)
     const blogLink = screen.getByRole('link', { name: /blog/i })
-    expect(blogLink).toHaveAttribute('href', 'blog/index.html')
+    expect(blogLink).toHaveAttribute('href', 'https://jeffbalagosa.substack.com/')
     expect(blogLink).toHaveAttribute('target', '_blank')
     expect(blogLink).toHaveAttribute('rel', 'noopener noreferrer')
   })

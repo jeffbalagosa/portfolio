@@ -23,7 +23,7 @@ export const Navigation = () => {
           <a href="#contact">Contact</a>
         </li>
         <li>
-          <a className="button" href="blog/index.html" target="_blank" rel="noopener noreferrer">
+          <a className="button" href="https://jeffbalagosa.substack.com/" target="_blank" rel="noopener noreferrer">
             Blog
           </a>
         </li>
