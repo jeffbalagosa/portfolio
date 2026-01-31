@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/react'
 import { renderHook } from '@testing-library/react'
-import { beforeEach, describe, expect, it, vi } from 'vitest'
+import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest'
 import { useScrollAnimation } from './useScrollAnimation'
 
 type ObserverCallback = (entries: IntersectionObserverEntry[]) => void
@@ -11,6 +11,11 @@ let disconnectMock: ReturnType<typeof vi.fn>
 beforeEach(() => {
   disconnectMock = vi.fn()
   observerCallback = null
+
+  vi.spyOn(window, 'requestAnimationFrame').mockImplementation((callback: FrameRequestCallback) => {
+    callback(0)
+    return 0
+  })
 
   class MockIntersectionObserver {
     constructor(callback: IntersectionObserverCallback) {
@@ -26,6 +31,10 @@ beforeEach(() => {
   }
 
   globalThis.IntersectionObserver = MockIntersectionObserver as unknown as typeof IntersectionObserver
+})
+
+afterEach(() => {
+  vi.restoreAllMocks()
 })
 
 describe('useScrollAnimation', () => {
