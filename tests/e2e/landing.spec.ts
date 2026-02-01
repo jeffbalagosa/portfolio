@@ -27,7 +27,7 @@ test('navigation links point to expected destinations', async ({ page }) => {
   await expect(resumeLink).toHaveAttribute('rel', 'noopener noreferrer')
 
   const blogLink = nav.getByRole('link', { name: 'Blog' })
-  await expect(blogLink).toHaveAttribute('href', 'blog/index.html')
+  await expect(blogLink).toHaveAttribute('href', 'https://jeffbalagosa.substack.com/')
   await expect(blogLink).toHaveAttribute('target', '_blank')
   await expect(blogLink).toHaveAttribute('rel', 'noopener noreferrer')
 })
@@ -68,4 +68,77 @@ test('project cards reveal after scroll and include action buttons', async ({ pa
 
   await expect(page.getByRole('link', { name: 'Github Repo' })).toHaveCount(cardCount)
   await expect(page.getByRole('link', { name: 'Live Site' }).first()).toBeVisible()
+})
+
+test.describe('mobile viewport', () => {
+  test.use({ viewport: { width: 390, height: 844 } })
+
+  test('renders header and sections on mobile', async ({ page }) => {
+    await page.goto('/')
+
+    await expect(page.getByTestId('app-root')).toBeVisible()
+    await expect(page.getByTestId('header-container')).toBeVisible()
+    await expect(page.getByTestId('header-tagline')).toBeVisible()
+
+    const h1 = page.locator('h1')
+    await expect(h1).toBeVisible()
+    await expect(h1).toContainText('Jeff Balagosa')
+  })
+
+  test('header text does not overflow viewport on mobile', async ({ page }) => {
+    await page.goto('/')
+
+    const header = page.getByTestId('header-container')
+    const headerBox = await header.boundingBox()
+
+    expect(headerBox).not.toBeNull()
+    if (headerBox) {
+      expect(headerBox.x).toBeGreaterThanOrEqual(0)
+      expect(headerBox.x + headerBox.width).toBeLessThanOrEqual(390)
+    }
+  })
+
+  test('tagline is positioned below header text on mobile', async ({ page }) => {
+    await page.goto('/')
+
+    const h1 = page.locator('h1')
+    const tagline = page.getByTestId('header-tagline')
+
+    const h1Box = await h1.boundingBox()
+    const taglineBox = await tagline.boundingBox()
+
+    expect(h1Box).not.toBeNull()
+    expect(taglineBox).not.toBeNull()
+    if (h1Box && taglineBox) {
+      expect(taglineBox.y).toBeGreaterThan(h1Box.y)
+    }
+  })
+
+  test('bg-overlay covers full viewport on mobile', async ({ page }) => {
+    await page.goto('/')
+
+    const overlay = page.locator('.bg-overlay')
+    const overlayBox = await overlay.boundingBox()
+
+    expect(overlayBox).not.toBeNull()
+    if (overlayBox) {
+      expect(overlayBox.width).toBeGreaterThanOrEqual(390)
+    }
+  })
+
+  test('project cards are visible and properly sized on mobile', async ({ page }) => {
+    await page.goto('/')
+
+    const firstCard = page.getByTestId('project-card').first()
+    await firstCard.scrollIntoViewIfNeeded()
+
+    await expect(firstCard).toBeVisible()
+    const cardBox = await firstCard.boundingBox()
+
+    expect(cardBox).not.toBeNull()
+    if (cardBox) {
+      expect(cardBox.width).toBeLessThanOrEqual(390)
+      expect(cardBox.x).toBeGreaterThanOrEqual(0)
+    }
+  })
 })
